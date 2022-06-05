@@ -1,0 +1,54 @@
+﻿<Window x:Class="Conv.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="540" Width="660">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1.2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Canvas Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="9" Background="Turquoise"/>
+        
+        <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" 
+                   FontSize="30" TextAlignment="Center" Text="Input" Foreground="Purple"/>
+        <TextBox x:Name = "Input" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" 
+                 FontSize="23" Background="Pink" Foreground="MediumSlateBlue"/>
+        
+        <TextBlock Grid.Row="2" Grid.Column="1" 
+                   FontSize="30" TextAlignment="Center" Text="Old base" Foreground="Purple"/>
+        <TextBlock Grid.Row="2" Grid.Column="3" 
+                   FontSize="30" TextAlignment="Center" Text="New base" Foreground="Purple"/>
+        
+        <TextBox x:Name = "From" Grid.Row="3" Grid.Column="1" 
+                 FontSize="25" Background="LemonChiffon" Foreground="Teal"/>
+        <TextBox x:Name = "To" Grid.Row="3" Grid.Column="3" 
+                 FontSize="25" Background="LemonChiffon" Foreground="Teal"/>
+        
+        <TextBox x:Name = "Dialog" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" 
+                 FontSize="22" Background="Pink" Foreground="MediumSlateBlue"/>
+        <Button Grid.Row="5" Grid.Column="3" Content = "Morb" Click="Here" FontSize="20" Background="Pink" Foreground="MediumSlateBlue"/>
+        
+        <TextBlock Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" 
+                   FontSize="30" TextAlignment="Center" Text="Output" Foreground="Purple"/>
+        <TextBox x:Name = "Output" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="3" 
+                 FontSize="23" Background="Pink" Foreground="MediumSlateBlue"/>
+    </Grid>
+</Window>
